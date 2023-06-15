@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeStoreCrudeEFDBFirstAppr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart", "ShoppingCart\ShoppingCart.csproj", "{852EE4FB-F18E-493B-B34F-3F16518FD0C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBindProperty", "TestBindProperty\TestBindProperty.csproj", "{BB1E02BD-3A91-4839-99C2-6676056412E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{852EE4FB-F18E-493B-B34F-3F16518FD0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{852EE4FB-F18E-493B-B34F-3F16518FD0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{852EE4FB-F18E-493B-B34F-3F16518FD0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1E02BD-3A91-4839-99C2-6676056412E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1E02BD-3A91-4839-99C2-6676056412E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1E02BD-3A91-4839-99C2-6676056412E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1E02BD-3A91-4839-99C2-6676056412E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
