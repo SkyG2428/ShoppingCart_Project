@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ShoppingCart.Models.Product>
+
+
+@*<div class="row pb-3 m-5">
+    @foreach(var item in @Model)
+    {
+        <div class="card m-6" style="width: 300px;">
+            <img class="card-img-top m-3" src="@item.ImageUrl" alt="Card image cap" style="width:180px;height:180px;">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5> 
+                <p class="card-text">Price: @item.Price.ToString("0.00")</p>
+                @*<p class=" card-text">Description: @item.Description</p>*@
+   @*             <a asp-action="Details" asp-controller="Home" asp-route-productId="@item.Id" class="btn btn-primary">Details</a>
+            </div>
+        </div>
+    }
+</div>*@
+
+
+
+
+<div class="row pb-3 style=" width:15rem;height:20rem;"">
+	@foreach(var product in Model)
+	{
+		<div class="col-lg-3 col-md-2 ">
+			<div class="row p-1">
+				<div class="col-12 p-1" style="border:1px solid #008cba; border-radius: 5px;">
+					<div class="card " >
+						<a asp-action="Details"  asp-route-productId="@product.Id"><img src="@product.ImageUrl" class="card-img-top rounded " style="width:15rem;height:15rem;" /></a>
+
+						<div class="card-body">
+						<div class="pl-1">
+								<a asp-action="Details" class="text-decoration-none" asp-route-productId="@product.Id">	<small><p class="card-title h5 text-primary">@product.Name</p></small></a>
+							@*<p class="card-title text-info">by <b>@product.Description</b></p>*@
+						</div>
+						<div class="pl-1">
+								<p>List Price: <b>₹@product.Price.ToString("0.00")</b></p>
+						</div>
+					
+						</div>
+					</div>
+					<div>
+						<a asp-action="Details" class="btn btn-primary form-control" asp-route-productId="@product.Id">
+							Details
+						</a>
+					</div>
+				</div> 
+			</div>
+
+		</div>
+
+		
+	}
+</div>
+
+
+

@@ -1,0 +1,81 @@
+﻿@{
+    var status = Context.Request.Query["status"];
+    var pending = "text-primary";
+    var underprocess = "text-primary";
+    var shipped = "text-primary";
+    var approved = "text-primary";
+    var all = "text-primary";
+
+    switch (status)
+    {
+        case "pending":
+            pending = "active text-green";
+            break;
+        case "underprocess":
+            underprocess = "active text-green";
+            break;
+        case "shipped":
+            shipped = "active text-green";
+            break;
+        case "approved":
+            approved = "active text-green";
+            break;
+        default:
+            all = "active text-green";
+            break;
+    }
+
+}
+
+<div class="p-3">
+    <div class="d-flex justify-content-between pt-4">
+        <div class="p-2">
+            <h2 class="text-primary">Order List</h2>
+        </div>
+        <div class="p-2">
+            <ul class="list-group list-group-horizontal-sm">
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="pending">
+                <li class="list-group-item @pending">pending</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="approved">
+                <li class="list-group-item @approved">approved</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="underprocess">
+                <li class="list-group-item @underprocess">UnderProcess</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="shipped">
+                <li class="list-group-item @shipped">shipped</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="all">
+                <li class="list-group-item @all">All</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <br /><br />
+
+    <table id="tblData" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Payment Status</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section scripts{
+    <script src="~/js/Order.js"></script>
+}

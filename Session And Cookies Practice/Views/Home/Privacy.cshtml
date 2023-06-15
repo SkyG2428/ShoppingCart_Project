@@ -1,0 +1,25 @@
+﻿@using System.Text.Json;
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+@*@{
+    string use = Context.Session.GetString("NewUser");
+    LoginUserModel NewU = JsonSerializer.Deserialize<LoginUserModel>(use);
+}*@
+@*<h2><i>Session Password: @NewU.UserName</i></h2>
+<h2><i>Session Password: @NewU.Password </i></h2>*@
+
+<br />
+
+<h5>Session User: @Context.Session.GetString("NewUser")</h5>
+<h5>Session Password: @Context.Session.GetString("NewUser")</h5>
+
+
+
+

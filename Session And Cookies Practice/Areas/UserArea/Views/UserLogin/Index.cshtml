@@ -1,0 +1,28 @@
+﻿@using System.Text.Json;
+@using Session_And_Cookies_Practice.Models;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>User Login</h1>
+
+<p class="alert-success">Login Successfully</p>
+
+<h4>Cookies UserName: @ViewBag.cookiedemo</h4>
+<h4>Cookies Details: @ViewBag.cookiePAss.UserName , @ViewBag.cookiePAss.Password</h4> 
+
+
+<h4>Session UserName: @ViewBag.sessionUser</h4>
+
+<h4>Session DirectAccessUserName: @Context.Session.GetString("Username")</h4>
+
+<h4>Session AllDetails: @ViewBag.SessionAllDEtails.UserName , @ViewBag.SessionAllDEtails.Password</h4>
+@*<h4>Session DirectAccessUserName: @JsonSerializer.Deserialize<@LoginUserModel>(Context.Session.GetString("Details"))</h4>*@
+
+@*@{
+    <h4>Session DirectAccessUserName: @JsonSerializer.Deserialize<@LoginUserModel>(Context.Session.GetString("Details"))</h4>
+}*@
+
+<h4>Session UserName: @ViewBag.NewuserData.UserName , @ViewBag.NewuserData.Password</h4>
+

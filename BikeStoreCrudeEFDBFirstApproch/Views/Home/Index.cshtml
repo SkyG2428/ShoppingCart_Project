@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <button class="btn btn-primary w-50">
+        <a asp-area="BikeBrands" asp-controller="Brands" asp-action="Index" class="text-light">Brands</a>
+    </button>
+<hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="BikeCategories" asp-controller="Categories" asp-action="Index" class="text-light">Categories</a>
+    </button>
+<hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="Customers" asp-controller="Customers" asp-action="Index" class="text-light">Customers</a>
+    </button>
+<hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="Ordering" asp-controller="Orders" asp-action="Index" class="text-light">Orders</a>
+    </button>
+    <hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="OrderItems" asp-controller="OrderItems" asp-action="Index" class="text-light">Order items</a>
+    </button>
+    <hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="Products" asp-controller="Products" asp-action="Index" class="text-light">Products</a>
+    </button>
+    <hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="Employee" asp-controller="Staffs" asp-action="Index" class="text-light">Employee</a>
+    </button>
+    <hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="Stocks" asp-controller="Stocks" asp-action="Index" class="text-light">Stocks</a>
+    </button>
+    <hr />
+    <button class="btn btn-primary w-50">
+        <a asp-area="Stores" asp-controller="Stores" asp-action="Index" class="text-light">Stores Location</a>
+    </button>
+</div>

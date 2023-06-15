@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="datatables.net-dt" Version="1.13.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BikeStoreDataBaseLibrary\BikeStoreDataBaseLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\BikeBrands\Data\" />
+    <Folder Include="Areas\BikeBrands\Models\" />
+    <Folder Include="Areas\BikeCategories\Data\" />
+    <Folder Include="Areas\BikeCategories\Models\" />
+    <Folder Include="Areas\Customers\Data\" />
+    <Folder Include="Areas\Customers\Models\" />
+    <Folder Include="Areas\Employee\Data\" />
+    <Folder Include="Areas\Employee\Models\" />
+    <Folder Include="Areas\Ordering\Data\" />
+    <Folder Include="Areas\Ordering\Models\" />
+    <Folder Include="Areas\OrderItems\Data\" />
+    <Folder Include="Areas\OrderItems\Models\" />
+    <Folder Include="Areas\Products\Data\" />
+    <Folder Include="Areas\Products\Models\" />
+    <Folder Include="Areas\Stocks\Data\" />
+    <Folder Include="Areas\Stocks\Models\" />
+    <Folder Include="Areas\Stores\Data\" />
+    <Folder Include="Areas\Stores\Models\" />
+  </ItemGroup>
+
+</Project>

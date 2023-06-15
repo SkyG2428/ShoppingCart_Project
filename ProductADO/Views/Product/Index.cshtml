@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ProductADO.Models.Products.ProductModule>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (TempData["InfoMessage"]!=null)
+{
+    <div class="alert alert-info">
+        <strong>Info ! </strong> @TempData["InfoMessage"]
+        <button type="button" class="btn-close" data-dismiss="alert " aria-label="Close">
+        
+    </button>
+    </div>
+}
+
+else if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-info">
+        <strong>Success ! </strong> @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-dismiss="alert " aria-label="Close">
+        </button>
+    </div>
+}
+else if
+    (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        <strong>Error ! </strong> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-dismiss="alert " aria-label="Close">
+        </button>
+    </div>
+    }
+
+
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Products</a>
+</p>
+<table class="table table-bordered table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remark)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remark)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new {  id=item.ProductId} ,new {@Class="btn btn-primary  " }) &nbsp;&nbsp;&nbsp;&nbsp;
+                    @Html.ActionLink("Details", "Details", new {  id=item.ProductId  },new {@Class="btn btn-success" })  &nbsp;&nbsp;&nbsp;&nbsp;
+                    @Html.ActionLink("Delete", "Delete", new { id=item.ProductId  },new {@Class="btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CSCDropDown.Models.StateModel>
+
+@{
+    ViewData["Title"] = "State";
+}
+
+<h1>State</h1>
+
+<p>
+    <a asp-action="StateCreate" asp-controller="Cascade">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.stateid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stateName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Countryid)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.stateid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stateName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Countryid)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

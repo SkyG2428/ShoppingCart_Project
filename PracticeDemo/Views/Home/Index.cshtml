@@ -1,0 +1,43 @@
+﻿@model IEnumerable<PracticeDemo.Models.CompanyDetailsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Company's</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-info btn-lg m-3"><i class="bi bi-person-plus-fill"></i></a>
+</p>
+<table class="table table-hover" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+               
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyId)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.CompanyName)*@
+                    <a asp-area="TeamsArea" asp-action="TeamsById" asp-controller="Team" asp-route-id="@item.CompanyId"> @item.CompanyName</a>
+            </td>
+            <td>
+                    @Html.ActionLink("", "Edit", new {  id=item.CompanyId  } ,new{@class="btn btn-primary bi bi-pencil-square "}) |
+                    @Html.ActionLink("", "Details", new {  id=item.CompanyId  } ,new{@class="btn btn-success bi bi-ticket-detailed "}) |
+                    @Html.ActionLink("", "Delete", new {  id=item.CompanyId  } ,new{@class="btn btn-danger bi bi-trash3-fill "})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,73 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "BikestoreContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": ".\\",
+   "OutputPath": ".\\Entity",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "BikeStoreDataBaseLibrary",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[production].[brands]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[production].[categories]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[production].[products]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[production].[stocks]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[sales].[customers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[sales].[order_items]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[sales].[orders]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[sales].[staffs]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[sales].[stores]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "mr-ag\\sqlexpress.Bikestore.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": true,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

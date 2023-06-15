@@ -1,0 +1,77 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "SchoolSystemContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": ".\\",
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "DBFirstLayer",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Class]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Exam]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Expense]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Fees]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Student]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StudentAttendance]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Subject]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Teacher]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TeacherAttendance]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TeacherSubject]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "mr-ag\\sqlexpress.SchoolSystem.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": true,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

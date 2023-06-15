@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div class="dropdown">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        School Mangemant System
+        </button>
+
+    <div class="dropdownlist-content" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" asp-controller="Classes" asp-action="Index">Classes</a>
+        <a class="dropdown-item" asp-controller="Students" asp-action="Index">Students</a>
+        <a class="dropdown-item" asp-controller="Teachers" asp-action="Index">Teachers</a>
+        <a class="dropdown-item" asp-controller="Exams" asp-action="Index">Exam</a>
+        <a class="dropdown-item" asp-controller="Expenses" asp-action="Index">Expenses</a>
+        <a class="dropdown-item" asp-controller="Fees" asp-action="Index">Fees</a>
+        <a class="dropdown-item" asp-controller="StudentAttendances" asp-action="Index">StudentAttendances</a>
+        <a class="dropdown-item" asp-controller="TeacherAttendances" asp-action="Index">TeacherAttendances</a>
+        <a class="dropdown-item" asp-controller="Subjects" asp-action="Index">Subjects</a>
+        <a class="dropdown-item" asp-controller="TeacherSubjects" asp-action="Index">TeacherSubjects</a>
+    </div>
+
+
+
+
+</div>
