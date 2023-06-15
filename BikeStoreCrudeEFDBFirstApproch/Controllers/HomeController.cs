@@ -1,7 +1,7 @@
 ﻿using BikeStoreCrudeEFDBFirstApproch.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+//Hello!!!
 namespace BikeStoreCrudeEFDBFirstApproch.Controllers
 {
     public class HomeController : Controller
