@@ -4,6 +4,7 @@ using System.Diagnostics;
 //Hello!!!
 //Welcome To BikeStore
 //Akash Updated
+//Conflict
 namespace BikeStoreCrudeEFDBFirstApproch.Controllers
 {
     public class HomeController : Controller
